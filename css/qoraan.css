@@ -285,6 +285,12 @@ marquee {
     .qoraan .text img {
         max-width: 100%;
     }
+    .qoraan .container {
+        margin-top: auto;
+    }
+    .qoraan .rec {
+        width: 200px;
+    }
 }
 .qoraan .text {
     display: flex;
