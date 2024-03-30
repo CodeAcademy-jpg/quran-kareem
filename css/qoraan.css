@@ -274,7 +274,7 @@ marquee {
         font-size: 30px;
         font-family: "Tajawal", sans-serif;
         width: 300px;
-        height: 275px;
+        height: 330px;
         color: white;
         padding-bottom: 20px;
         margin-bottom: 100px;
@@ -282,6 +282,8 @@ marquee {
 }
 
 .qoraan {
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -341,7 +343,7 @@ marquee {
         justify-content: space-between;
         margin-top: 400px;
     }
-    .dab {
+    /* .dab {
         display: flex;
         flex-direction: column;
         padding: 10px 0;
@@ -350,10 +352,10 @@ marquee {
         text-align: center;
         justify-content: center;
         bottom: 0;
-    }
-    .dab .container {
+    } */
+    /* .dab .container {
         position: relative;
-    }
+    } */
     /* .qoraan .co {
         height: 200px;
         width: 100%;
@@ -361,18 +363,106 @@ marquee {
         margin-bottom: 200px;
     } */
 }
-.rag {
+/* .rag {
     background-color: white;
     position: relative;
     --webkit-box-shadow: 0 0 10px #ddd;
     --moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
     max-width: 100%;
-}
-.rag .container {
+} */
+/* .rag .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+} */
+section {
+    position: relative;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg {
+    position: fixed;
+    background-image: url("../images/quran.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+div button {
+    width: 140px;
+    padding: 3px;
+    background-color: white;
+    font-size: 22px;
+    color: black;
+    border: 2px solid white;
+    margin-top: 5px;
+    border-radius: 20px 0 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+@media(max-width: 767px) {
+    div button {
+        width: 60px;
+        padding: 1px;
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+}
+div button:hover {
+    color: white;
+    background-color: hsl(29,93%,48%);
+    border: 2px solid hsl(29,93%,48%);
+}
+#d1,#d2,#d3,#d4,#d5 {
+    width: 400px;
+    height: 330px;
+    background-color: rgb(0,0,0,0.1);
+    border-radius: 30px;
+    color: orange;
+    text-shadow: 1px 1px black;
+    margin-top: 30px;
+    display: none;
+}
+@media(max-width: 767px) {
+    #d1,#d2,#d3,#d4,#d5 {
+        width: 250px;
+        height: 200px;
+        line-height: 1.2;
+    }
+}
+#roc {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+#sec {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+@media(max-width: 767px) {
+    #sec {
+        width: 90%;
+        display: none;
+    }
+    audio {
+        width: 80%;
+    }
+}
+
+#sda {
+    color: red;
 }
