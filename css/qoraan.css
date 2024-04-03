@@ -161,7 +161,6 @@ a {
        flex: 1;
        display: flex;
        height: 400px;
-       /* position: absolute; */
        flex-direction: column;
        max-width: 100%;
        padding: 10px 0;
@@ -293,6 +292,11 @@ marquee {
     text-align: center;
     width: 100%;
 }
+.qoraan .rec {
+    width: 570px;
+    height: 450px;
+    margin-top: 40px;
+}
 @media(max-width: 767px) {
     .qoraan {
 
@@ -300,13 +304,13 @@ marquee {
         position: relative;
         padding-top: 20px;
         padding-bottom: 20px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: -50px;
+        margin-bottom: 20px;
     
     }
     .qoraan .text img {
         max-width: 100%;
-        margin-top: 0px;
+        margin-top: 30px;
     }
     .qoraan .container {
         margin-top: auto;
@@ -316,7 +320,7 @@ marquee {
 
     }
     .qoraan .rec {
-        width: 200px;
+        width: 300px;
         margin-bottom: 30px;
     }
     .qoraan .sec {
